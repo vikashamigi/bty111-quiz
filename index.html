@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Biotechnology Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container fade-in">
+  <h1>🧬 Biotechnology Quiz</h1>
+  <div class="top-bar">
+    <span id="timer">⏳ 100:00</span>
+    <span id="progress"></span>
+  </div>
+
+  <div id="question-box"></div>
+
+  <div class="buttons">
+    <button onclick="prevQuestion()">⬅ Previous</button>
+    <button onclick="nextQuestion()">Next ➡</button>
+  </div>
+
+  <button id="submitBtn" onclick="submitQuiz()">Submit Quiz</button>
+</div>
+
+<div id="resultBox" class="result hidden">
+  <h2>🎉 Quiz Completed!</h2>
+  <p id="scoreText"></p>
+  <button onclick="location.reload()">Restart Quiz</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
